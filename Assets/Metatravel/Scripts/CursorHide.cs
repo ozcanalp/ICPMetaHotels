@@ -9,7 +9,19 @@ public class CursorHide : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
-
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.K))
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+        if (Input.GetKey(KeyCode.L))
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+    }
     public void HideAndCenterCursor(bool hide)
     {
         if (hide)
