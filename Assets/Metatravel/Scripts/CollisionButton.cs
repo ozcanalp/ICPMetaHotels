@@ -14,13 +14,15 @@ public class CollisionButton : MonoBehaviour
 {
 
     [SerializeField] private Button button;
+    
     // Start is called before the first frame update
     void Start()
     {
         // Playe basýnca Bug oldu button gözüküyodu direkt ,Startta kapatýyoz çok önemli biþey deðil.
         OnDisable();
+        
     }
-    
+   
     /**
      Collisiona ilk giriþ yapýldýðýnda butonu active etsin  
      */
@@ -29,6 +31,7 @@ public class CollisionButton : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {
             OnEnable();
+            
             Debug.Log("Entered");
         }
     }
@@ -41,6 +44,7 @@ public class CollisionButton : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             OnEnable();
+
             //Debug.Log("Staying");
         }
     }
@@ -53,6 +57,7 @@ public class CollisionButton : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             OnDisable();
+       
             Debug.Log("Exited");
         }
     }

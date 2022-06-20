@@ -37,6 +37,7 @@ public class PlayerMenu : MonoBehaviour
 
     private void Update()
     {
+        
         if (PV.IsMine)
         {
             if (flag)
@@ -45,7 +46,7 @@ public class PlayerMenu : MonoBehaviour
                 {
                     cursorManager.GetComponent<CursorHide>().HideAndCenterCursor(false);
                     crossHair.SetActive(false);
-                    stop.SetActive(true);
+                    //stop.SetActive(true);
                     isMenuOpen = true;
                     flag = false;
                 }
@@ -53,11 +54,13 @@ public class PlayerMenu : MonoBehaviour
                 {
                     cursorManager.GetComponent<CursorHide>().HideAndCenterCursor(true);
                     crossHair.SetActive(true);
-                    stop.SetActive(false);
+                    //stop.SetActive(false);
                     isMenuOpen = false;
                     flag = false;
                 }
             }
         }    
-    }
+    
+        }
+    
 }

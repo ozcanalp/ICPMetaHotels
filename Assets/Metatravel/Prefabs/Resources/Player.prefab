@@ -683,9 +683,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.37012482
-  m_Height: 2.2377033
+  m_Height: 2.2172174
   m_Direction: 1
-  m_Center: {x: -0.006350994, y: 0.1383765, z: 0}
+  m_Center: {x: -0.006350994, y: 0.14861941, z: 0}
 --- !u!54 &1419894754586217800
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -793,6 +793,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PV: {fileID: 5588714359924772066}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!114 &1882645060
 MonoBehaviour:
   m_ObjectHideFlags: 0

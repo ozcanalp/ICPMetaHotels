@@ -49,28 +49,28 @@ public class ShowReceptionistDialog : MonoBehaviour
             showTime -= Time.deltaTime;
             if (showTime < ((time / 6) * 1))
             {
-                txt.text = "We wIsh you a nIce day.";
+                txt.text = "We wish you a nice day.";
             }
             else if (showTime < ((time / 6) * 2))
             {
-                txt.text = "You can complete the reservatIon process on the screen here.";
+                txt.text = "You can complete the reservation process on the screen here.";
             }
             else if (showTime < ((time / 6) * 3))
             {
-                txt.text = "You can vIsIt varIous rooms In our hotel and choose the room you want.";
+                txt.text = "You can visit various rooms In our hotel and choose the room you want.";
             }
             else if (showTime < ((time / 6) * 4))
             {
-                txt.text = "I would lIke to help you make a reservatIon usIng the Near Protocol Infrastructure.";
+                txt.text = "I would like to help you make a reservatIon using the ICP.";
             }
             else if (showTime < ((time / 6) * 5))
             {
-                txt.text = "I am the receptIonIst.";
+                txt.text = "I am the receptionist.";
             }
             else if (showTime < 27.5f)
             {
                 bubble.transform.GetChild(3).gameObject.SetActive(true);
-                txt.text = "HELLO AND WELCOME TO NEAR HOTEL...";
+                txt.text = "HELLO AND WELCOME TO ICP HOTEL...";
             }
             else if (showTime < 28.5f)
             {

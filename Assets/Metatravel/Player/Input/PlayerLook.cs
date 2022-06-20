@@ -33,7 +33,12 @@ public class PlayerLook : MonoBehaviour
         {
             if (this.GetComponentInParent<PlayerMenu>().isMenuOpen)
                 return;
-
+            
+            ///
+          //  if (CursorHide.isCursorVisible) {
+            //    return;
+            //}
+            ///
             float mouseX = Input.GetAxis("Mouse X") * mouseSensivity * Time.deltaTime;
             float mouseY = Input.GetAxis("Mouse Y") * mouseSensivity * Time.deltaTime;
 
